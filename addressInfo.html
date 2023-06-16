@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/shifters.css">
+  <script src="js/shifters.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <title>Rapid Shifters</title>
+</head>
+
+<body>
+  <div class="headers">
+    <h2>Rapid Shifters</h2>
+  </div>
+  <div style="padding-top:10px; padding-left:10px;">
+    <h2 id="sharing"></h2>
+  </div>
+<div class="left-container">
+  <div class="formbold-main-wrapper">
+    <div class="formbold-form-wrapper">
+      <h2> Origin Details</h2>
+      <br>
+      <div>
+          <div class="formbold-input-group">
+              <label for="originaddress" class="formbold-form-label"> Address </label>
+              <input type="text" name="originaddress" id="originaddress" placeholder="Enter your origin address" class="formbold-form-input" />
+              <span class="error" id="originaddresserror"></span>
+          </div>
+
+          <div class="formbold-input-group">
+              <label for="originfloor" class="formbold-form-label"> Floor </label>
+              <input type="number" name="originfloor" id="originfloor" placeholder="Enter your floor no" class="formbold-form-input" />
+              <span class="error" id="originfloorerror"></span>
+          </div>
+
+          <div class="formbold-input-group">
+              <label for="originlift" class="formbold-form-label" style="display: inline-block;"> Lift </label>
+              <input type="checkbox" name="originlift" id="originlift" style="top: 2px; left: 6px; position: relative;" class="formbold-form-input-checkbox" />
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="right-container">
+    <div class="formbold-main-wrapper">
+      <div class="formbold-form-wrapper">
+        <h2> Destination Details</h2>
+      <br>
+      <div>
+          <div class="formbold-input-group">
+              <label for="destaddress" class="formbold-form-label"> Address </label>
+              <input type="text" name="destaddress" id="destaddress" placeholder="Enter your destination address" class="formbold-form-input" />
+              <span class="error" id="destaddresserror"></span>
+          </div>
+
+          <div class="formbold-input-group">
+              <label for="destfloor" class="formbold-form-label"> Floor </label>
+              <input type="number" name="destfloor" id="destfloor" placeholder="Enter your floor number" class="formbold-form-input" />
+              <span class="error" id="destfloorerror"></span>
+          </div>
+
+          <div class="formbold-input-group">
+              <label for="destlift" class="formbold-form-label" style="display: inline-block;"> Lift </label>
+              <input type="checkbox" name="destlift" id="destlift" style="top: 2px; left: 6px; position: relative;" class="formbold-form-input-checkbox" />
+          </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="button">
+    <div class="formbold-input-group">
+        <label class="formbold-form-label">
+            Configuration
+        </label>
+
+        <select class="formbold-form-select" name="configuration" id="configuration">
+            <option value="1bhk">1 BHK</option>
+            <option value="2bhk">2 BHK</option>
+            <option value="3bhk+">3 BHK +</option>
+        </select>
+    </div>
+
+    <div class="formbold-input-group">
+        <label class="formbold-form-label">
+            Loading and Unloading
+        </label>
+
+        <select class="formbold-form-select" name="loadingandunloading" id="loadingandunloading">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+    <button class="formbold-btn" onclick="validateSecondaryInfo()">Continue</button>
+    <button class="previous" onclick="window.history.back()">Previous</button>
+</div>
+  <script>
+    if(localStorage.getItem("sharing")=="true"){
+      document.getElementById("sharing").innerText="Congrats!! you got a shifting partner."
+    }
+  </script>
+</body>

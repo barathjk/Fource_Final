@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shifters.css">
+    <script src="js/shifters.js"></script>
+    <script src="js/distanceprice.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>Rapid Shifters</title>
+</head>
+
+
+<body>
+    <div class="headers">
+        <h2>Rapid Shifters</h2>
+    </div>
+    <br>
+    <br>
+    <h2 style="padding-left: 20px;"> Household Details</h2>
+    <div class="container1">
+        <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+
+                <div>
+                    <div class="formbold-input-group">
+                        <label for="sofa" class="formbold-form-label"> Sofa Set </label>
+                        <input type="number" name="sofa" id="sofa" placeholder="Number of Seats"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="tv" class="formbold-form-label"> Television </label>
+                        <input type="number" name="tv" id="tv" placeholder="Number of Televisions"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="washing" class="formbold-form-label"> Washing Machine </label>
+                        <input type="number" name="washing" id="washing" placeholder="Number of Washing Machine"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="Chairs" class="formbold-form-label"> Chairs </label>
+                        <input type="number" name="Chairs" id="Chairs" placeholder="Number of Chairs"
+                               class="formbold-form-input" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+
+                <div>
+                    <div class="formbold-input-group">
+                        <label for="cTable" class="formbold-form-label"> Computer Table </label>
+                        <input type="number" name="cTable" id="cTable" placeholder="Number of Computer Table"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="dTable" class="formbold-form-label"> Dinning Table</label>
+                        <input type="number" name="dTable" id="dTable" placeholder="Number of Dinning Table"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="drTable" class="formbold-form-label"> Dressing Table </label>
+                        <input type="number" name="drTable" id="drTable" placeholder="Number of Dressing Table"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="Geysers" class="formbold-form-label"> Geysers </label>
+                        <input type="number" name="Geysers" id="Geysers" placeholder="Number of Geysers"
+                               class="formbold-form-input" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+
+                <div>
+                    <div class="formbold-input-group">
+                        <label for="frige" class="formbold-form-label"> Refrigerator </label>
+                        <input type="number" name="frige" id="frige" placeholder="Number of refrigerator"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="wardrobe" class="formbold-form-label"> Steel Wardrobe </label>
+                        <input type="number" name="wardrobe" id="wardrobe" placeholder="Number of steel wardrobe"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="fish" class="formbold-form-label"> Fish Tank </label>
+                        <input type="number" name="fish" id="fish" placeholder="Number of fish tank"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="Cot" class="formbold-form-label"> Cot </label>
+                        <input type="number" name="Cot" id="Cot" placeholder="Number of Cots"
+                               class="formbold-form-input" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="formbold-main-wrapper">
+            <div class="formbold-form-wrapper">
+
+                <div>
+                    <div class="formbold-input-group">
+                        <label for="Air_Conditioner" class="formbold-form-label"> Air Conditioner </label>
+                        <input type="number" name="Air_Conditioner" id="Air_Conditioner" placeholder="Number of Air Conditioner"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="bed" class="formbold-form-label"> Beds </label>
+                        <input type="number" name="bed" id="bed" placeholder="Number of Beds"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="plant" class="formbold-form-label"> Plant pots </label>
+                        <input type="number" name="plant" id="plant" placeholder="Number of plant points"
+                               class="formbold-form-input" />
+                    </div>
+
+                    <div class="formbold-input-group">
+                        <label for="Heavy_items" class="formbold-form-label"> Other Heavy items </label>
+                        <input type="number" name="Heavy_items" id="Heavy_items" placeholder="Number of Heavy items"
+                               class="formbold-form-input" />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button">
+        <button class="formbold-btn" onclick="validateFinalInfo()">Continue</button>
+        <button class="previous" onclick="window.history.back()">Previous</button>
+    </div>
+
+    <div id="finalInvoice" type="text/x-handlebars-template" style="display: none;">
+
+        <!-- Header -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+    <tr>
+        <td height="20"></td>
+    </tr>
+    <tr>
+        <td>
+            <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable"
+                bgcolor="#ffffff" style="border-radius: 10px 10px 0 0;">
+                <tr class="hiddenMobile">
+                    <td height="40"></td>
+                </tr>
+                <tr class="visibleMobile">
+                    <td height="30"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table width="480" border="0" cellpadding="0" cellspacing="0" align="center"
+                            class="fullPadding">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <table width="220" border="0" cellpadding="0" cellspacing="0" align="left"
+                                            class="col">
+                                            <tbody>
+                                                <tr>
+                                                    <td align="left"> <img
+                                                            src="../Fource/images/logo_rs.png" width="32"
+                                                            height="32" alt="logo" border="0" /></td>
+                                                </tr>
+                                                <tr class="hiddenMobile">
+                                                    <td height="40"></td>
+                                                </tr>
+                                                <tr class="visibleMobile">
+                                                    <td height="20"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
+                                                        Hello, {{name}}.
+                                                        <br> Thank you for choosing us!
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table width="220" border="0" cellpadding="0" cellspacing="0" align="right"
+                                            class="col">
+                                            <tbody>
+                                                <tr class="visibleMobile">
+                                                    <td height="20"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="5"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        style="font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right;">
+                                                        Invoice
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                <tr class="hiddenMobile">
+                                                    <td height="50"></td>
+                                                </tr>
+                                                <tr class="visibleMobile">
+                                                    <td height="20"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
+                                                        <small>ORDER</small> #800000025<br />
+                                                        <small>{{date}}</small>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- /Header -->
+<!-- Order Details -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+    <tbody>
+        <tr>
+            <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable"
+                    bgcolor="#ffffff">
+                    <tbody>
+                        <tr>
+                        <tr class="hiddenMobile">
+                            <td height="60"></td>
+                        </tr>
+                        <tr class="visibleMobile">
+                            <td height="40"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="480" border="0" cellpadding="0" cellspacing="0" align="center"
+                                    class="fullPadding">
+                                    <tbody>
+                                        <tr>
+                                            <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 10px 7px 0;"
+                                                width="52%" align="left">
+                                                Item
+                                            </th>
+                                            
+                                            <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;"
+                                                align="right">
+                                                Subtotal
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td height="1" style="background: #bebebe;" colspan="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="10" colspan="4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                class="article">
+                                                Household charges
+                                            </td>
+                                            
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                align="right">{{total_amount}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                class="article">
+                                                Vehicle charges ({{vehicle}})
+                                            </td>
+                                            
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                align="right">{{transportation_charges}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                class="article">
+                                                Distance charges
+                                            </td>
+                                            
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                align="right">{{distancePrice}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                class="article">Labour charges</td>
+                                            
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;"
+                                                align="right">{{labour_charges}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- /Order Details -->
+<!-- Total -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+    <tbody>
+        <tr>
+            <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable"
+                    bgcolor="#ffffff">
+                    <tbody>
+                        <tr>
+                            <td>
+
+                                <!-- Table Total -->
+                                <table width="480" border="0" cellpadding="0" cellspacing="0" align="center"
+                                    class="fullPadding">
+                                    <tbody>
+                                        <tr>
+                                            <td
+                                            style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #b0b0b0; line-height: 22px; vertical-align: top; text-align:right; ">
+                                                <small>
+                                                    Subtotal
+                                                </small>
+                                            </td>
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 22px; vertical-align: top; text-align:right; white-space:nowrap;"
+                                                width="80">
+                                                <small>{{subtotal}}</small>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #000; line-height: 22px; vertical-align: top; text-align:right; ">
+                                                <strong>Grand Total (Incl.Tax)</strong>
+                                            </td>
+                                            <td
+                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #000; line-height: 22px; vertical-align: top; text-align:right; ">
+                                                <strong>{{grandtotal}}</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                
+                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 22px; vertical-align: top; text-align:right; ">
+                                                Savings from sharing to shift</td>
+                                            
+                                            <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e; line-height: 22px; vertical-align: top; text-align:right; white-space:nowrap;"
+                                            width="80">
+                                                {{savings}}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- /Table Total -->
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- /Total -->
+<!-- Information -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+    <tbody>
+        <tr>
+            <td>
+                <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable"
+                    bgcolor="#ffffff">
+                    <tbody>
+                        <tr>
+                        <tr class="hiddenMobile">
+                            <td height="60"></td>
+                        </tr>
+                        <tr class="visibleMobile">
+                            <td height="40"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="480" border="0" cellpadding="0" cellspacing="0" align="center"
+                                    class="fullPadding">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                
+                                                <table width="220" border="0" cellpadding="0" cellspacing="0"
+                                                    align="left" class="col">
+
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
+                                                                <strong>SHIFTING DATE</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100%" height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top; ">
+                                                                {{shifting_date}}
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100%" height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
+                                                                <strong>BILLING INFORMATION</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100%" height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top; ">
+                                                                {{originAddress}}
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+
+                                                <table width="220" border="0" cellpadding="0" cellspacing="0"
+                                                    align="right" class="col">
+                                                    <tbody>
+                                                        <tr class="visibleMobile">
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
+                                                                <strong>PAYMENT METHOD</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100%" height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top; ">
+                                                                Pay on delivery
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="480" border="0" cellpadding="0" cellspacing="0" align="center"
+                                    class="fullPadding">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table width="220" border="0" cellpadding="0" cellspacing="0"
+                                                    align="left" class="col">
+                                                    <tbody>
+                                                        <tr class="hiddenMobile">
+                                                            <td height="35"></td>
+                                                        </tr>
+                                                        <tr class="visibleMobile">
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
+                                                                <strong>SHIPPING INFORMATION</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100%" height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top; ">
+                                                                {{destinationAddress}}
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+
+                                                <table width="220" border="0" cellpadding="0" cellspacing="0"
+                                                    align="right" class="col">
+                                                    <tbody>
+                                                        <tr class="hiddenMobile">
+                                                            <td height="35"></td>
+                                                        </tr>
+                                                        <tr class="visibleMobile">
+                                                            <td height="20"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 11px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 1; vertical-align: top; ">
+                                                                <strong>SHIPPING METHOD</strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="100%" height="10"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; line-height: 20px; vertical-align: top; ">
+                                                                The Four-ce Agency
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="hiddenMobile">
+                            <td height="60"></td>
+                        </tr>
+                        <tr class="visibleMobile">
+                            <td height="30"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- /Information -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+
+    <tr>
+        <td>
+            <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable"
+                bgcolor="#ffffff" style="border-radius: 0 0 10px 10px;">
+                <tr>
+                    <td>
+                        <table width="480" border="0" cellpadding="0" cellspacing="0" align="center"
+                            class="fullPadding">
+                            <tbody>
+                                <tr>
+                                    <td
+                                        style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
+                                        Have a nice day.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr class="spacer">
+                    <td height="50"></td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="20"></td>
+    </tr>
+</table>
+    </div>
+    <style>
+
+    </style>
+</body>

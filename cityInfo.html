@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/shifters.css">
+  <script src="js/shifters.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <title>Rapid Shifters</title>
+</head>
+
+<body>
+    <div class="headers">
+        <h2>Rapid Shifters</h2>
+    </div>
+
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+            <div>
+                <div class="formbold-input-group">
+                    <label for="name" class="formbold-form-label"> Name </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="formbold-form-input" />
+                    <span class="error" id="nameerror"></span>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label for="email" class="formbold-form-label"> Email </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" class="formbold-form-input" />
+                    <span class="error" id="emailerror"></span>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label for="email" class="formbold-form-label"> Phone Number </label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone" class="formbold-form-input" />
+                    <span class="error" id="phoneerror"></span>
+                </div>
+
+
+                <div class="formbold-input-group">
+                    <label class="formbold-form-label">
+                        Origin City
+                    </label>
+
+                    <select class="formbold-form-select" name="origin" id="origin">
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Mysore">Mysore</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label class="formbold-form-label">
+                        Destination City
+                    </label>
+
+                    <select class="formbold-form-select" name="destination" id="destination">
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Mysore">Mysore</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Chennai">Chennai</option>
+                    </select>
+                </div>
+
+                <div class="formbold-input-group">
+                    <label class="formbold-form-label">
+                        Shifting Date
+                    </label>
+                    <input type="date" name="date" id="date" placeholder="Enter Shifting date" class="formbold-form-input" />
+                </div>
+
+                <div class="formbold-input-group">
+                    <label for="sharing" class="formbold-form-label" style="display: inline-block;"> Willing to share with others? </label>
+                    <input type="checkbox" name="sharing" id="sharing" style="top: 2px; left: 6px; position: relative;" class="formbold-form-input-checkbox" />
+                </div>
+
+                <button class="formbold-btn" onclick="validateCityInfo()">Continue</button>
+                <button class="previous" onclick="window.history.back()">Previous</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" onclick="footervalidation()">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="https://barathjk.github.io/House_Shifting/page_construction.jpg">Services</a></li>
+            <li class="menu__item"><a class="menu__link" onclick="footervalidation()">Contact</a></li>
+
+        </ul>
+        <p>&copy;2023 The Four-ce | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
